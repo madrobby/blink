@@ -1,10 +1,9 @@
-/* opacity 0.999 to force sub-pixel antialising off, which causes flickering */
-
 @-webkit-keyframes blink {
   0%     { opacity: 0 } 50% { opacity: 0 }
-  50.01% { opacity: 0.999 } 100% { opacity: 0.999 }
+  50.01% { opacity: 1 } 100% { opacity: 1 }
 }
 
 blink {
   -webkit-animation: blink 0.7s infinite linear alternate;
+  -webkit-font-smoothing: antialiased;
 }
